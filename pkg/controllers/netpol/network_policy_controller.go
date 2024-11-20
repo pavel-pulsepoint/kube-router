@@ -220,7 +220,6 @@ func (npc *NetworkPolicyController) RequestFullSync() {
 
 // Sync synchronizes iptables to desired state of network policies
 func (npc *NetworkPolicyController) fullPolicySync() {
-
 	var err error
 	var networkPoliciesInfo []networkPolicyInfo
 	npc.mu.Lock()
